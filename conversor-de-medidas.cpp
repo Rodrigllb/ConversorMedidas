@@ -55,10 +55,8 @@ int main() {
 	std::cout << " 1.Tempo \n 2.Massa \n 3.Temperatura\n\n";
 
 	int comandoParaEscolhaInicial{ 0 };
-	SetConsoleTextAttribute(hConsole, FOREGROUND_RED); //Defino a cor vermelha da proxima linha de vermelho.
 	std::cout << "prompt: ";
 	std::cin >> comandoParaEscolhaInicial;
-	SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN); //Após isso, defino a cor verde com fundo preto novamente. 
 
 	switch (comandoParaEscolhaInicial) {
 	case 1:
@@ -82,10 +80,8 @@ void medidas_de_tempo() {
 	std::cout << " 1. Segundo para Minutos \n 2. Minutos para Hora \n 3. Horas para dia \n 4. Dias para ano \n\n";
 	int comando_para_escolha{ 0 };
 
-	SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
 	std::cout << "prompt: ";
 	std::cin >> comando_para_escolha;
-	SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
 
 	switch (comando_para_escolha) {
 	case 1:
@@ -179,10 +175,9 @@ void medidas_de_massa() {
 	std::cout << "Quais medidas mais comuns de massa desejas converter?\n";
 	std::cout << "1. Gramas para Kilogramas \n2. Gramas para miligramas \n";
 	int comando_para_escolhas{ 0 };
-	SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
+
 	std::cout << "prompt: ";
 	std::cin >> comando_para_escolhas;
-	SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
 
 	switch (comando_para_escolhas) {
 	case 1:
